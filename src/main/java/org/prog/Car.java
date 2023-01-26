@@ -12,6 +12,25 @@ public class Car {
     System.out.println(city);
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    if (obj instanceof Car) {
+      return ((Car) obj).color.equals(this.color);
+    } else {
+      return false;
+    }
+  }
+
+  @Override
+  public String toString() {
+    return "This car is " + this.color;
+  }
+
+  @Override
+  public int hashCode() {
+    return super.hashCode();
+  }
+
   private void startEngine() {
 
   }

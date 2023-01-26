@@ -14,39 +14,51 @@ public class Main {
    */
 
   public static void main(String... args) {
-//    int i = 10;
-//    smth(i);
-//    System.out.println(i);
-
+    int i1 = 1;
+    int i2 = 1;
+    int i3 = 1;
+    int i4 = 1;
+    int i5 = 1;
+    int i6 = 2;
 
     Car bobsCar = new Car();
-//    Car aliceCar = new Car();
-//    Car thatCar = bobsCar;
+    bobsCar.color = "red";
+
+    Car aliceCar = new Car();
+    aliceCar.color = "red";
+
+    String s0 = "s";
+    String s1 = "s";
+    String s2 = "s";
+    String s3 = "s";
+
+    s0 = s0 + "e"; //se
+
+    String name1 = new String("Alice");
+    String name2 = new String("Alic" + "e");
+    String name3 = name2;
+
+//    System.out.println(i1 == i2);
+//    System.out.println(bobsCar.equals(aliceCar));
+//    System.out.println(name1.equals(name2));
+//    System.out.println(name1 == name2);
+//    System.out.println(name2 == name3);
 //
-//    paintCar(bobsCar, "red");
-//    System.out.println(bobsCar.color);
-//
-//    paintCar(aliceCar, "blue");
-//    System.out.println(aliceCar.color);
-//
-//    paintCar(thatCar, "yellow");
-//    System.out.println(thatCar.color);
-//    System.out.println("Bobs car is now " + bobsCar.color);
+//    System.out.println(s0.equals(s1));
+//    System.out.println(s2 == s3);
+//    System.out.println(name1 == name2);
+//    System.out.println(name1.equals(name2));
 
+    HeavyTruck ht1 = new HeavyTruck();
+    HeavyTruck ht2 = new HeavyTruck();
 
-    bobsCar.drive("Zhytomyr");
+    ht1.color = "blue";
+    ht2.color = "blue";
 
-    Truck truck = new Truck();
-    truck.drive("Lviv");
-    truck.color = "black";
+//    System.out.println(ht1.equals(ht2));
 
-    truck.addCargo();
-    HeavyTruck heavyTruck = new HeavyTruck();
-    heavyTruck.addCargo();
-    heavyTruck.drive("Kyiv");
-
-    Tesla tesla = new Tesla();
-    tesla.drive("Lutsk");
+    Object o = new Object();
+    System.out.println(ht1);
   }
 
   public static void paintCar(Car car, String carColor) {
